@@ -2,13 +2,13 @@
 #You can import some modules or create additional functions
 
 
-def checkio(line):
+def checkio(number):
     #Your code here
     #It's main function. Don't remove this function
     #It's using for auto-testing and must return a result for check.  
 
     #replace this for solution
-    return line
+    return 0
 
 #Some hints
 #You can convert string to integer with int()
@@ -20,4 +20,4 @@ def checkio(line):
 if __name__ == '__main__':
     assert checkio(123456) == 3, '1st example'
     assert checkio(111111) == 0, '2nd example'
-    assert checkio(24680) == 4, '3rd example'
+    assert checkio(24680) == 5, '3rd example'

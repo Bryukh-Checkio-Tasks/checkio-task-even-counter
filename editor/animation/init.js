@@ -1,5 +1,5 @@
 //Dont change it
-requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
+requirejs(['ext_editor_1', 'jquery_190'],
     function (ext, $, TableComponent) {
 
         var cur_slide = {};
@@ -75,15 +75,15 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 $content.find('.call').html('Pass: checkio(' + JSON.stringify(checkioInput) + ')');
                 $content.find('.answer').remove();
             }
-            //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var $explanation = $content.find(".explanation");
+            var strInput = String(checkioInput);
+            for (var i = 0; i < strInput.length; i++) {
+                var d = strInput[i];
+                var span = $("<span></span>").text(d);
+                span.addClass(Number(d) % 2 === 1? 'odd' : 'even')
+                $explanation.append(span);
+            }
 
 
             this_e.setAnimationHeight($content.height() + 60);

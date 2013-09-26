@@ -57,6 +57,21 @@
     border-color: #de0202;
 }
 
+.animation-content .explanation {
+    color: #294270;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.animation-content span.even {
+    color: #F0801A;
+}
+
+.animation-content span.odd {
+
+}
+
 .tryit-content {
     background-color: #dfe8f7;
     font-family: verdana;
