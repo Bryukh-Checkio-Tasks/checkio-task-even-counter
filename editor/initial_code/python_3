@@ -20,4 +20,4 @@ def checkio(line):
 if __name__ == '__main__':
     assert checkio(123456) == 3, '1st example'
     assert checkio(111111) == 0, '2nd example'
-    assert checkio(2468) == 4, '3rd example'
+    assert checkio(24680) == 4, '3rd example'
