@@ -19,21 +19,42 @@ TESTS = {
             "answer": 0,
         },
         {
-            "input": 2468,
+            "input": 24680,
+            "answer": 5,
+        },
+        {
+            "input": 1234567890,
+            "answer": 5,
+        },
+        {
+            "input": 9999999999,
             "answer": 0,
         },
-
+        {
+            "input": 1000000000,
+            "answer": 9,
+        },
+        {
+            "input": 42,
+            "answer": 2,
+        }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": 2000000000,
+            "answer": 10,
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": 777,
+            "answer": 0,
+        },
+        {
+            "input": 134,
+            "answer": 1,
+        },
+        {
+            "input": 88,
+            "answer": 2,
+        },
     ]
 }
